@@ -1,4 +1,4 @@
-tower-example
+ansible-servicenow
 =============
 
-Ansible Tower Example Playbooks
+Ansible Service Now Playbook

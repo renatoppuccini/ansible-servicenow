@@ -1,0 +1,13 @@
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx
+  namespace: ansible-awx
+spec:
+  deployment_type: awx
+  tower_admin_user: ansible-admin
+  tower_admin_email: test@example.com
+  tower_admin_password: CHANGEME
+  tower_broadcast_websocket_secret: CHANGEME
+  tower_ingress_type: Route
