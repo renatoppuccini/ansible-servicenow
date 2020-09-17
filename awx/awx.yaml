@@ -8,8 +8,8 @@ spec:
   deployment_type: awx
   tower_admin_user: ansible-admin
   tower_admin_email: test@example.com
-  tower_admin_password: CHANGEME
-  tower_broadcast_websocket_secret: CHANGEME
+  tower_admin_password: changeme
+  tower_broadcast_websocket_secret: changeme
   tower_ingress_type: Route
 
-  tower_task_image: quay.io/mdelder/ansible-awx:14.0.0_pysnow
+  tower_task_image: quay.io/mdelder/ansible-awx:14.0.1_pipaddons
