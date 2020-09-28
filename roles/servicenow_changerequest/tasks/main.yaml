@@ -14,7 +14,7 @@
     data:
       severity: "{{ change_request.severity }}"
       priority: "{{ change_request.priority }}"
-      short_description: "{{ change_request.short_description }}"
+      short_description: "GitOps Change: Update for {{ app_name }} on {{ target_clusters }}"
       implementation_plan: "{{ change_request.implementation_plan }}"
       justification: "{{ change_request.justification }}"
       description: "{{ change_request.description }}"
