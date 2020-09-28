@@ -1,4 +1,8 @@
 ---
+- name: Pip install pysnow
+  pip:
+    name: pysnow
+    extra_args: --user
 
 - name: Create a change request
   snow_record:
@@ -10,12 +14,12 @@
     data:
       severity: "{{ change_request.severity }}"
       priority: "{{ change_request.priority }}"
-      short_description: "Planned Change: Application Deployment"
-      implementation_plan: "Updated by Red Hat Advanced Cluster Management for Kubernetes"
-      justification: "A new revision was available from the application channel in GitHub."
-      description: "The following resources have been updated: [...]"
-      risk_impact_analysis: "Changes are made automatically based on approved changes in GitHub."
-      test_plan: "Run synthetic validation tests post-deployment."
+      short_description: "{{ change_request.short_description }}"
+      implementation_plan: "{{ change_request.implementation_plan }}"
+      justification: "{{ change_request.justification }}"
+      description: "{{ change_request.description }}"
+      risk_impact_analysis: "{{ change_request.risk_impact_analysis }}"
+      test_plan: "{{ change_request.test_plan }}"
       start_date: "{{ ansible_date_time.iso8601 }}"
   register: new_incident
 
