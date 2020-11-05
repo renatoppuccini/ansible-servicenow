@@ -8,9 +8,9 @@
   snow_record:
     state: present
     table: change_request
-    username: "{{ snow_credentials.username }}"
-    password: "{{ snow_credentials.password }}"
-    instance: "{{ snow_credentials.instance }}"
+    username: "{{ snow_credentials.username | default(snow_username, true)}}"
+    password: "{{ snow_credentials.password | default(snow_password, true)}}"
+    instance: "{{ snow_credentials.instance | default(snow_instance, true)}}"
     data:
       severity: "{{ change_request.severity }}"
       priority: "{{ change_request.priority }}"
