@@ -3,6 +3,10 @@
   pip:
     name: pysnow
     extra_args: --user
+- name: Pip install pyrequests
+  pip:
+    name: requests
+    extra_args: --user
 
 - name: Create a change request
 #  snow_record:
