@@ -1,4 +1,8 @@
 ---    
+- hosts: all
+  collections:
+    - servicenow.servicenow
+    
 - name: Pip install pysnow
   pip:
     name: pysnow
