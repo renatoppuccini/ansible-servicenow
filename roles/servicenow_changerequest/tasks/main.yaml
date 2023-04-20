@@ -7,6 +7,7 @@
   pip:
     name: pysnow
     extra_args: --user
+
 - name: Pip install pyrequests
   pip:
     name: requests
