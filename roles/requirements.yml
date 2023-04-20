@@ -1,5 +1,7 @@
 # from galaxy
+collections:
+  - name: servicenow.servicenow
 
-- name: servicenow.itsm
-- src: yatesr.timezone
+
+  - src: yatesr.timezone
 
