@@ -1,10 +1,4 @@
----       
-- name: Using ServiceNow Collection
-  hosts: localhost
-  gather_facts: no
-  collections:
-    - servicenow.servicenow
-    
+---           
 - name: Pip install pysnow
   pip:
     name: pysnow
