@@ -1,8 +1,4 @@
----
-- name: Using ServiceNow Collection
-  collections:
-    - servicenow.servicenow
-    
+---    
 - name: Pip install pysnow
   pip:
     name: pysnow
