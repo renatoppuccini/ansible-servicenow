@@ -5,7 +5,8 @@
     extra_args: --user
 
 - name: Create a change request
-  snow_record:
+#  snow_record:
+  servicenow.servicenow.snow_record:
     state: present
     table: change_request
     username: "{{ snow_credentials.username | default(snow_username, true)}}"
